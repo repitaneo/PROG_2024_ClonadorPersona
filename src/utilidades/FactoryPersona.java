@@ -1,6 +1,7 @@
 package utilidades;
 
 import persona.Persona;
+import persona.PersonaData;
 
 public class FactoryPersona {
 
