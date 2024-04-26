@@ -33,14 +33,11 @@ public class ClonadorPersonas {
 		for(int i=0;i<10;i++) {
 
 			// creo una persona
-			Persona p = FactoryPersona.getPersona(nombre);
-			
-			// compruebo la persona
-			boolean personaValida = ValidadorPersona.isValid(p);
-			
-			if(personaValida) {
+			try {
+				Persona p = FactoryPersona.getPersona(nombre);
 				personas.add(0, p);
 			}
+			catch(Exception e) {}
 		}
 		return personas;
 	}
