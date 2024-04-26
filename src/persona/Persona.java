@@ -23,6 +23,9 @@ public class Persona {
 		this.altura = altura;
 		this.edad = edad;
 	}
+	
+	
+	public Persona() {}
 
 
 	/**
